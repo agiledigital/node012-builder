@@ -8,6 +8,8 @@ MAINTAINER Agile Digital <info@agiledigital.com.au>
 LABEL Description="Docker image with libraries and tools as required for building NodeJS 0.12 projects using Grunt" Vendor="Agile Digital" Version="0.1"
 
 ENV HOME /home/jenkins
+
+RUN apk add --update --no-cache git
 RUN addgroup -S -g 10000 jenkins
 RUN adduser -S -u 10000 -h $HOME -G jenkins jenkins
 
