@@ -9,7 +9,7 @@ LABEL Description="Docker image with libraries and tools as required for buildin
 
 ENV HOME /home/jenkins
 
-RUN apk add --update --no-cache git bash
+RUN apk add --update --no-cache git bash openjdk7-jre
 RUN addgroup -S -g 10000 jenkins
 RUN adduser -S -u 10000 -h $HOME -G jenkins jenkins
 
