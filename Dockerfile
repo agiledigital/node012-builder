@@ -22,4 +22,7 @@ RUN npm install -g bower@1.8.2 grunt-cli@1.2.0
 
 ADD confy-assembly-2.3.jar /usr/share/jenkins/
 
+ENV FONTCONFIG_PATH=/etc/fonts
+ADD fonts.conf /etc/fonts/fonts.conf
+
 USER jenkins
