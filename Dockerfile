@@ -1,5 +1,5 @@
 #
-# Grunt Node 0.12 Build Image
+# Node 0.12 Build Image
 # Docker image with libraries and tools as required for building NodeJS 0.12 projects using Grunt 
 #
 
